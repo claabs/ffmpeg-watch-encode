@@ -25,10 +25,10 @@ docker container stop <container ID>
 
 ## Options
 You can configure some encoding options with environment variables:
+
 | Variable Name | Default | Description                                                                                                        |
 |---------------|---------|--------------------------------------------------------------------------------------------------------------------|
 | ENCODER       | libx265 | Pick the encoder to use. The below options may behave differently when not using the libx265 encoder.              |
 | CRF           | 28      | A quality factor for the encode from 0.0-58.0. Lower numbers are better quality and higher file size.              |
 | PRESET        | medium  | x265 encoder preset. Set as low as you're willing to wait. See https://x265.readthedocs.io/en/default/presets.html |
-| TUNE          | [none]  | x265 encoder tuning. See https://x265.readthedocs.io/en/default/presets.html#tuning                                |
-
+| TUNE          | (none)  | x265 encoder tuning. See https://x265.readthedocs.io/en/default/presets.html#tuning                                |
