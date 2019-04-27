@@ -12,7 +12,11 @@ docker build . -t ffmpeg
 
 ### Run the container with mounted volumes
 ```sh
+# Run from cloned repository
 docker run -v `pwd`/watch:/watch -v `pwd`/output:/output -v `pwd`/copy:/copy -v `pwd`/logs:/logs ffmpeg
+
+# Run from Docker Hun
+docker run -v `pwd`/watch:/watch -v `pwd`/output:/output -v `pwd`/copy:/copy -v `pwd`/logs:/logs charlocharlie/ffmpeg-watch-encode
 ```
 
 ### Stopping the container
