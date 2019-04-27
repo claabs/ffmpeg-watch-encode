@@ -1,0 +1,1 @@
+* * * * * /bin/bash /usr/src/ffmpeg-watch-encode/encode.sh -i /watch -o /output -m /copy -l /logs > /dev/stdout
